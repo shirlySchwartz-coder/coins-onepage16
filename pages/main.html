@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A Single Page Application</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Media/iconscoins.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/spa.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <!--  -->
+</head>
+
+<body>
+    <main>
+        <div class="cover">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                style="margin:auto;background:#fff;display:block;" width="200px" height="200px" viewBox="0 0 100 100"
+                preserveAspectRatio="xMidYMid">
+                <g transform="rotate(0 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fe718d">
+                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                            begin="-0.9166666666666666s" repeatCount="indefinite"></animate>
+                    </rect>
+                </g>
+                <g transform="rotate(30 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fe718d">
+                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                            begin="-0.8333333333333334s" repeatCount="indefinite"></animate>
+                    </rect>
+                </g>
+                <g transform="rotate(60 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fe718d">
+                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s"
+                            repeatCount="indefinite"></animate>
+                    </rect>
+                </g>
+                <g transform="rotate(90 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fe718d">
+                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                            begin="-0.6666666666666666s" repeatCount="indefinite"></animate>
+                    </rect>
+                </g>
+                <g transform="rotate(120 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fe718d">
+                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                            begin="-0.5833333333333334s" repeatCount="indefinite"></animate>
+                    </rect>
+                </g>
+                <g transform="rotate(150 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fe718d">
+                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s"
+                            repeatCount="indefinite"></animate>
+                    </rect>
+                </g>
+                <g transform="rotate(180 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fe718d">
+                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                            begin="-0.4166666666666667s" repeatCount="indefinite"></animate>
+                    </rect>
+                </g>
+                <g transform="rotate(210 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fe718d">
+                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                            begin="-0.3333333333333333s" repeatCount="indefinite"></animate>
+                    </rect>
+                </g>
+                <g transform="rotate(240 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fe718d">
+                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s"
+                            repeatCount="indefinite"></animate>
+                    </rect>
+                </g>
+                <g transform="rotate(270 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fe718d">
+                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                            begin="-0.16666666666666666s" repeatCount="indefinite"></animate>
+                    </rect>
+                </g>
+                <g transform="rotate(300 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fe718d">
+                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                            begin="-0.08333333333333333s" repeatCount="indefinite"></animate>
+                    </rect>
+                </g>
+                <g transform="rotate(330 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#fe718d">
+                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s"
+                            repeatCount="indefinite"></animate>
+                    </rect>
+                </g>
+            </svg>
+        </div>
+        <!--cover-->
+        <div>
+            <div class="row">
+                <div class="col-2" id="nav">
+                    <ul>
+                        <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+                        <li><a href="#" data-target="live" class="nav-link">LIVE</a></li>
+                        <li><a href="#" data-target="about" class="nav-link">ABOUT</a></li>
+                        <li><a href="#" data-target="contact" class="nav-link">CONTACT</a></li>
+                        <li><input Type="text" class="search-link" placeholder="search" id="search"></li>
+                        <li> 
+                            <button class="btn btn-primary my-2 my-sm-0 search-btn" id="searchBtn"
+                                onclick="getSearchCoin()">Search</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-10" id="pic_header">
+                    <div class="parallax" id="head">
+                        <div class="centered content" id="title">
+                            <h1>Coins Rates !</h1>
+                            <h3>Virtual currency exchange rates</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="page active" id="home">
+                    <h1>Home</h1>
+                    <div class="wrepper_home" id="panel1">
+                        <div id="modal" style="display: none;"></div>
+                        <div class="row row-cols-md-2" id="card-wrapper">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="page" id="live">
+                    <h1>LIVE</h1>
+                    <div class="container section">
+
+                    </div>
+                </div>
+
+                <div class="page" id="about">
+                    <h1>ABOUT</h1>
+                    <div class="container section">
+
+                    </div>
+                </div>
+                <div class="page" id="contact">
+                    <h1>CONTACT</h1>
+                    <div class="container section">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+    <script src="../addons/jquery-3.4.1.min.js"></script>
+    <script src="../scripts/apifunc.js"></script>
+    <script src="../scripts/localstrfun.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/modal.js"></script>
+    <script src="../scripts/uibuild.js"></script>
+    <script src="../scripts/spapp.js"></script>
+</body>
+
+</html>
