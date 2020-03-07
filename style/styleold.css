@@ -1,0 +1,195 @@
+*{
+    /*border: 0;*/
+    padding: 0;
+    margin: 0;
+  }
+  .cover{
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width:100%;
+    height: 100%;
+    top:0;;
+    left:0;
+    z-index: 1000;
+    display: none;
+  }
+  .cover svg{
+    position: absolute;
+    top:50%;
+    width:50px;
+    height: 50px;
+    margin-top:-25px;
+    left:50%;
+    margin-left:-25px;
+  }
+  .parallax {
+      /* The image used */
+      background-image: url("../media/header1.jpg");
+      opacity: 0.8;
+    
+      /* Set a specific height */
+      min-height: 300px;
+    
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;   
+      /*   */
+  }
+   
+  /* Centered text */
+  .centered {
+      background-color: rgba(222, 232, 246, 0.85);
+      padding: 15px;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  #spe{
+  background-color: red;
+  min-height: 20px;
+  border: 1px black solid;
+  }  
+  hr{
+        background-color: gray;
+  
+  }
+  button:active{
+    background:blue;
+  }
+  #title {
+      text-align: center;
+      
+  }
+  #main{
+      min-height: 500px;
+  }
+  #searchBtn{
+  margin-right: 15px;
+  }
+  #footer{
+    background-color: wheat;
+    min-height: 150px;
+    text-align: center;
+  } 
+  .right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    /*border: 3px solid #73AD21;*/
+    padding: 10px;
+  }   
+  .clearfix {
+    overflow: auto;
+  }
+  #panel1{
+  
+  min-height: 250px;
+  align-self: center;
+  }
+  #panel2{
+    background-color: whitesmoke;
+    min-height: 250px;
+  
+  }
+  #panel3{
+    background-color: papayawhip;
+    min-height: 250px;
+  }
+  .title{
+    text-align: center;
+  }
+  .card-footer{
+    align-self: center;
+  }
+  .section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hide{
+    display: none;
+   
+  }
+  .show{
+    display: block;
+  }
+  #coin_img{
+    width: 50%;
+   padding-top: 10px;
+  }
+  #modal{
+    width:300px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  /*Slider Input*/
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+   
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

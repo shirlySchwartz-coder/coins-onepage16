@@ -46,9 +46,5 @@ ul {
     color: white;
   }
 .my-2{
-  border: 5px solid black;
-  width: 200px;
-}
-.my-2.active{
-background-color: chartreuse;
+  width: 190px;
 }
